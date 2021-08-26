@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum explicabo ipsa atque expedita, natus quam porro. Ad cupiditate rerum eligendi, libero cumque dolorum hic aliquam natus beatae quidem et ipsam?</p>
+    <p class="demo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa consectetur provident officia doloribus facilis blanditiis nobis nisi maiores impedit saepe ad non distinctio rem eveniet ex, soluta quae incidunt dignissimos?</p>
+    <p class="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid impedit libero consequuntur, voluptatem nostrum dolore deserunt dicta porro nihil, ab ipsum eos nulla numquam voluptate atque, accusamus rem ratione sequi.</p>
+    <button onclick="myFunction()">Click me!</button>
+    <script>
+        function myFunction(){
+            var x = document.getElementsByClassName("demo");
+            var i;
+            for(i=0; i<x.length; i++){
+                x[i].style.backgroundColor = "yellow";
+            }
+        }
+    </script>
+</body>
+</html>
