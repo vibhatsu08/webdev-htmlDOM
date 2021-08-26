@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, accusantium. Totam corporis suscipit minima obcaecati impedit! Rerum neque, sint commodi similique perferendis harum nobis saepe, consequuntur voluptatem labore quia qui!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente porro sequi numquam eius vero reiciendis dicta a harum commodi aperiam, rerum explicabo alias excepturi debitis ea est adipisci! Fugiat, hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nihil laudantium impedit exercitationem minima officiis, modi illo? Enim, alias ratione, tempora veritatis ab velit, deleniti accusantium laboriosam illo libero voluptatum.</p>
+    </div>
+    <p>Watch the element change because of the query selector.</p>
+    <button onclick="myFunction()">Click me!</button>
+    <script>
+        function myFunction(){
+            var x = document.getElementById("myDiv");
+            x.querySelector("p").innerHTML = "Hello World!";
+        }
+    </script>
+</body>
+</html>
