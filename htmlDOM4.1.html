@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id incidunt saepe earum maiores quidem reprehenderit et. Aliquid vero, reprehenderit saepe harum voluptate nisi unde cumque assumenda, doloribus dicta, neque quo.</p>
+        <p class="example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id tenetur veritatis error, ab neque incidunt sint magni cumque, exercitationem qui, non vitae. Sint hic nesciunt assumenda porro neque? Deleniti?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat repellendus maxime doloremque aliquid rerum quo, nihil dolorum quae quisquam expedita modi architecto enim a ut cum! Aspernatur, doloribus. Laudantium, veniam?</p>
+    </div>
+    <button onclick="myFunction()">Click me!</button>
+    <div id="myDiv1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id incidunt saepe earum maiores quidem reprehenderit et. Aliquid vero, reprehenderit saepe harum voluptate nisi unde cumque assumenda, doloribus dicta, neque quo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id tenetur veritatis error, ab neque incidunt sint magni cumque, exercitationem qui, non vitae. Sint hic nesciunt assumenda porro neque? Deleniti?</p>
+        <p id="example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat repellendus maxime doloremque aliquid rerum quo, nihil dolorum quae quisquam expedita modi architecto enim a ut cum! Aspernatur, doloribus. Laudantium, veniam?</p>
+    </div>
+    <p>Click the button to see the change in the element.</p>
+    <button onclick="myFunction1()">Click me!</button>
+    <div id="myDiv2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id incidunt saepe earum maiores quidem reprehenderit et. Aliquid vero, reprehenderit saepe harum voluptate nisi unde cumque assumenda, doloribus dicta, neque quo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id tenetur veritatis error, ab neque incidunt sint magni cumque, exercitationem qui, non vitae. Sint hic nesciunt assumenda porro neque? Deleniti?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat repellendus maxime doloremque aliquid rerum quo, nihil dolorum quae quisquam expedita modi architecto enim a ut cum! Aspernatur, doloribus. Laudantium, veniam?</p>
+    </div>
+    <p>Click the button to see the change in the element.</p>
+    <button onclick="myFunction2()">Click me!</button>
+    <script>
+        function myFunction(){ //changing the inner html using query selector in javascript.
+            let x = document.getElementById("myDiv");
+            x.querySelector("p.example").innerHTML = "hello, world!";
+        }
+
+        function myFunction1(){ //changing the inner html using query selector in javascript with the id tag for the element.
+            let y = document.getElementById("myDiv1");
+            y.querySelector("#example").innerHTML = "hello world!";
+        }
+        
+        function myFunction2(){
+            let z = document.getElementById("myDiv2");
+            z.querySelector("p").style.backgroundColor = "lightblue";
+            z.querySelector("p").style.color = "darkblue";
+        }
+    </script>
+</body>
+</html>
